@@ -10,12 +10,17 @@ const SideBar = () => {
   const [extended, setExtended] = useState(false);
 
   const handleClickExtended = () => {
-    setExtended(!extended)
-  }
+    setExtended(!extended);
+  };
   return (
     <div className="sidebar">
       <div className="top">
-        <img onClick = {handleClickExtended} className="menu" src="/images/menu_icon.png" alt="" />
+        <img
+          onClick={handleClickExtended}
+          className="menu"
+          src="/images/menu_icon.png"
+          alt=""
+        />
         <div className="new_chat">
           <img src={plus} alt="" />
           {extended ? <span>New chat</span> : null}
@@ -35,21 +40,21 @@ const SideBar = () => {
         <div className="bottom">
           <div className="bottom-item recent-entry">
             <img src={question} alt="" />
-            {extended? <p>Help</p> :null}
+            {extended ? <p>Help</p> : null}
           </div>
         </div>
 
         <div className="bottom">
           <div className="bottom-item recent-entry">
             <img src={history} alt="" />
-           {extended? <p>Activity</p>:null} 
+            {extended ? <p>Activity</p> : null}
           </div>
         </div>
 
         <div className="bottom">
           <div className="bottom-item recent-entry">
             <img src={setting} alt="" />
-            {extended? <p>Settings</p>:null}
+            {extended ? <p>Settings</p> : null}
           </div>
         </div>
       </div>
