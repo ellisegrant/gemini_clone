@@ -4,6 +4,10 @@ import compass from "../../assets/compass_icon.png";
 import bulb from "../../assets/bulb_icon.png"
 import message from "../../assets/message_icon.png"
 import code from "../../assets/code_icon.png"
+import gallery from "../../assets/gallery_icon.png"
+import mic from "../../assets/mic_icon.png"
+import send from "../../assets/send_icon.png"
+
 import "./Main.css";
 
 const Main = () => {
@@ -45,8 +49,16 @@ const Main = () => {
             </div>
             <div className="main-bottom">
                 <div className="search-box">
-                    <input type="text" placeholder="Enter a prompt " />
+                    <input type="text" placeholder="Ask Gemini" />
+                    <div>
+                        <img src = {gallery} alt="" />
+                        <img src= {mic}alt="" />
+                        <img src={send} alt="" />
+                    </div>
                 </div>
+                <p className="bottom_info">
+                    At the end I was a good friend so I thought keep and basit sense 
+                </p>
             </div>
         </div>
       </div>
