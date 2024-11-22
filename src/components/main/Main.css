@@ -118,4 +118,6 @@
 .main .bottom-info{
     font-size:13px;
     margin:15px auto;
+    font-weight: 300;
+    text-align: center;
 }

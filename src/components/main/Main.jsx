@@ -11,6 +11,7 @@ import send from "../../assets/send_icon.png"
 import "./Main.css";
 
 const Main = () => {
+  
   return (
     <div className="main">
       <div className="nav">
